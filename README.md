@@ -1,5 +1,11 @@
 # **Bikeshare Python Project**
 
+### Initiate Script
+1. Locate bikeshare.py
+> This file has code to start application
+2. Open GitBash and type python
+3. Answer questions provided
+
 ### Project Scope
 This code allows user(s) to input certain characteristics about Chicago, New York City, and Washington followed by either entering months between January thru June or all months and weekday or all days. The return values will display time stats, station stats, trip duration stats, user stats, user type with counts, and five lives of data values.
 
