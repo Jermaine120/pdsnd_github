@@ -9,6 +9,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 months = ['all','january', 'february', 'march', 'april', 'may', 'june']
+week_days = ['all','monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday','sunday']
+
 
 def get_filters():
     """
@@ -34,7 +36,6 @@ def get_filters():
         month = input("Enter a month all, january, february, march, april, may, june: ").lower()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    week_days = ['all','monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday','sunday']
     day = ''
     while day not in week_days:
         day = input("Enter a day or all: ").lower()
@@ -145,7 +146,6 @@ def trip_duration_stats(df):
     df['mtt'] = df['End Time'] - df['Start Time']
     avg_time = df['mtt'].mean()
     print('Mean Travel Time: {}'.format(avg_time))
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
